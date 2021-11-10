@@ -26,9 +26,9 @@ jonSnowDefense += 25 //Jon was given a shield for protection
 //     console.log(`Jon's health is ${jonSnowHealth}`)
 // }
 
-for (let i = 0; i < 3; i++){
+for (let i = 0; i < 6; i++){
     if (jonSnowHealth <= 0){
-        console.log("Jon Snow is in critical condition")
+        console.log("Jon Snow is dead")
     } else{ 
         jonSnowHealth -= (jamieLannisterAttack - jonSnowDefense)
         console.log(`Jon's health is ${jonSnowHealth}`)
