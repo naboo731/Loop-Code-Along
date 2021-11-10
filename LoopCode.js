@@ -17,9 +17,21 @@ let jamieLannisterDefense = 20
 //     console.log("Both attacks are equally powerful")
 // }
 
-if (jonSnowHealth <= 0){
-    console.log("Jon Snow is in critical condition")
-} else{ 
-    jonSnowHealth -= jamieLannisterAttack 
-    console.log(`Jon's health is ${jonSnowHealth}`)
+jonSnowDefense += 25 //Jon was given a shield for protection
+
+// if (jonSnowHealth <= 0){
+//     console.log("Jon Snow is in critical condition")
+// } else{ 
+//     jonSnowHealth -= (jamieLannisterAttack - jonSnowDefense)
+//     console.log(`Jon's health is ${jonSnowHealth}`)
+// }
+
+for (let i = 0; i < 3; i++){
+    if (jonSnowHealth <= 0){
+        console.log("Jon Snow is in critical condition")
+    } else{ 
+        jonSnowHealth -= (jamieLannisterAttack - jonSnowDefense)
+        console.log(`Jon's health is ${jonSnowHealth}`)
+    }
 }
+
